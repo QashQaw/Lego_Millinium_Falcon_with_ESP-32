@@ -30,4 +30,4 @@ Between each scenes, is a random process, and the sleep time is a function calle
 The firing scenes also choose a number between 100-300 for the number of shot to fire - and call a random int between 100-700, which is tyhe time before the next shot in millisecs.
 
 
-[firing_above.mp4](https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/blob/dba6ee2568796d8caba9b22bba552a776c7dd361/images/lights/firing_above.mp4)
+![firing_above.mp4](https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/blob/dba6ee2568796d8caba9b22bba552a776c7dd361/images/lights/firing_above.mp4)
