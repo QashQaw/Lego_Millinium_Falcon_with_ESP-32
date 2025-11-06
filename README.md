@@ -1,3 +1,7 @@
+<div align="center">
+    <img src="hhttps://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/images/qashqaw.png">
+</div>
+
 # Lego Millinium Falcon with ESP-32
 Building The Legostarwars Ultimate Collection - Millinium Falcon with ESP32 Controller adding lights to the Collectio. (Hopefully this iwsn'y last LEGO project)
 
