@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/images/qashqaw.png">
+    <img src="https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/blob/main/images/qashqaw.png">
 </div>
 
 # Lego Millinium Falcon with ESP-32
