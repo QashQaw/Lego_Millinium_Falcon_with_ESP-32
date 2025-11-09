@@ -53,7 +53,6 @@ I know python from work, so needed to find out what the ESP32-S3 Wroon Connector
 from random import randint
 from machine import Pin
 import time
-import network
 from neopixel import NeoPixel
 
 # Initialize Pins
@@ -84,3 +83,12 @@ led8=Pin(8,Pin.OUT)
 millinium = bool()
 #######################
 ```
+
+First we'll imprt some dferent libraries, for setting all this up 
+
+|:------------------- | :-----------------|
+| from random import randint| Use for create rondon int|
+| from machine import Pin | Use for easy accessing Pins |
+| import time | Use for sleep |
+| from neopixel import NeoPixel| Use for using LED strips|
+
