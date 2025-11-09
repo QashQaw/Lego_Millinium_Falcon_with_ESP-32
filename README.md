@@ -93,3 +93,5 @@ First we'll imprt some dferent libraries, for setting all this up
 | import time | Use for sleep |
 | from neopixel import NeoPixel| Use for using LED strips|
 
+Next up is enabling the different PIN output we need, for having the lights/Pins turn on or off, and setting up NeoPixels,  the number of LEDs there is on the strips.<br>
+And finally setting the Millinium boolean as true. and the we are ready for the script- 
