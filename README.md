@@ -109,3 +109,69 @@ def timeout():
 
 This function is a value, we'll use several times within the script. This function is called after each sccenes, providing a int - that it'll use for eping. The value are sleep between 30secs to 15minutes, creating the natural pause between each scenes, and also used to a timer between light on and off in the functions. 
 
+### cockpitt()
+Setting the light on in the cockpitt, uses PIN1 for lightning up 3white lights inside the cockpitt. Then calling the timeout() before turning the light off again
+
+```
+## Cockpitt ligth turing
+    # on the light 1 Pins
+def cockpitt():
+    # Turn on Pin
+    led1.value(1)
+    # Choosing the wait pause
+    timeout()
+    # Turn off Pin
+    led1.value(0)
+    print("Finished Cockpitt light")
+
+```
+
+### above() and below()
+
+```
+#######################
+## Shots above falcon
+def above():
+    # Setting the start count
+    acount = 1
+    # Setting the number of shots)
+    shots = randint(100, 300)
+    # Choosing the weapon to be fired 
+    while (acount < shots):
+        choice = randint(1,4)
+        # Switch created for each Weapon(Pins)
+        if choice == 1:
+            led6.value(1)
+            time.sleep_ms(10)
+            led6.value(0)
+            slt1 = randint(100,700)
+            time.sleep_ms(slt1)
+            acount = acount + 1
+        elif choice == 2:
+            led7.value(1)
+            time.sleep_ms(10)
+            led7.value(0)
+            slt2 = randint(100,700)
+            time.sleep_ms(slt2)
+            acount = acount + 1
+        elif choice == 3:
+            led15.value(1)
+            time.sleep_ms(10)
+            led15.value(0)
+            slt3 = randint(100,700)
+            time.sleep_ms(slt3)
+            acount = acount + 1
+        elif choice == 4:
+            led16.value(1)
+            time.sleep_ms(10)
+            led16.value(0)
+            slt4 = randint(100,700)
+            time.sleep_ms(slt4)
+            acount = acount + 1
+        else:
+            print("no number was chosen" + choice)
+            
+    else:
+        print("Finished firing above")
+        
+```
