@@ -1,6 +1,0 @@
-# Source - https://stackoverflow.com/a
-# Posted by ton, modified by community. See post 'Timeline' for change history
-# Retrieved 2025-11-09, License - CC BY-SA 4.0
-
-extra_javascript:
-    - js/image-carousel.js 
