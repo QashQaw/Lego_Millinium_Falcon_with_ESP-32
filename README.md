@@ -12,7 +12,7 @@ A long time ago, I found and bought the package: Lego StarWars Ultimate Collecti
 The Actual build time for the Millinum Falcon was 36hours and the hours in planning , configuring and setting up the ESP32-S3 Wroom controller was a longer process - and in this case - using a Pythonscript for switching the lights on and off. My Idea is making a glass shelf hanging this is a corner in a bedroom.
 
 <div align="center">
-    <img src="https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/blob/03bfb4ca907dddfa7cbbe97dbf4f1550996adcf6/images/build/Lego_Boxset.png">
+    <img src="https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/blob/main/images/build/Lego_Boxset.png">
 </div>
 
 The package contains 4 boxes, containing several bags with the numbers 1-18, which is the different levels you need to go through while building the Millinium Falcon. I did not lock any of the top plates, so I could create the light within tha Falcon. 
