@@ -188,7 +188,12 @@ def above():
 For creating the flying effect - I found some small strips, small enough to be inside the tubes, that simulates the Falcon engine. <br>
 The LED strips is 3mm width, and therefor I'd using these for simulating the blue light when the falcon flies. <br>
 
-EDIT:  I'm thinking about developing some more effects when flying, the brightness should flicker, starting from withe light to flying in lightspeed in blue and perhaps some sound - but more to come about that-
+EDIT:  I'm thinking about developing some more effects when flying, the brightness should flicker, starting from withe light to flying in lightspeed in blue and perhaps some sound - but more to come about that!
+The script will do when flying:
+1. setting the color of the strips
+2. write to activate the color on the strips
+3. taking the timeout()
+4. then turing off the lights in LED strips. 
 
 ```
 #######################
