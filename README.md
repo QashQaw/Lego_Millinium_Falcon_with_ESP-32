@@ -185,6 +185,11 @@ def above():
 ```
 
 ### flyin()
+<div align="center">
+    <img src="https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/blob/main/images/lights/Firing_above.gif">
+</div>
+
+
 For creating the flying effect - I found some small strips, small enough to be inside the tubes, that simulates the Falcon engine. <br>
 The LED strips is 3mm width, and therefor I'd using these for simulating the blue light when the falcon flies. <br>
 
@@ -213,8 +218,8 @@ def flying():
 
 ```
 
-### Landing()
-
+### landing()
+The final function for now
 ```
 #######################
 ##  Our Landing bridge
