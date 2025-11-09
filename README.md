@@ -35,11 +35,12 @@ Between each scenes, is a random process, and the sleep time is a function calle
 
 The firing scenes also choose a number between 100-300 for the number of shot to fire - and call a random int between 100-700, which is tyhe time before the next shot in millisecs.
 
-<div align="center">
-    <img src="https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/blob/main/images/lights/Firing_above.gif">
-</div>
 
 # Starting With Pythom (or Micro-python)
+---
+<div align="center">
+    <img src="https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/blob/main/images/lights/lights004.jpg">
+</div>
 I know python from work, so needed to find out what the ESP32-S3 Wroon Connector can do. Lets take a look at the python file created for this Falcon. 
 
 ```
@@ -84,7 +85,7 @@ millinium = bool()
 #######################
 ```
 
-First we'll imprt some dferent libraries, for setting all this up 
+First we'll import some different libraries, for setting all this up 
 
 | Commands             | Usage |
 | :------------------- | :-----------------|
@@ -107,7 +108,6 @@ def timeout():
     time.sleep_ms(wait)
 
 ```
-
 
 ### cockpitt()
 ---
@@ -136,6 +136,10 @@ def cockpitt():
 
 ### above() and below()
 ---
+<div align="center">
+    <img src="https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/blob/main/images/lights/Firing_above.gif">
+</div>
+
 The 2 functions are the same, only difference is where the lasercanon are placedm and explained it'll do  the following: <br>
 1. Setting the acount as 1 (the first shot)
 2. Settings the amount of shots as a randint between 100 and 300.
@@ -229,7 +233,9 @@ def flying():
 ```
 
 ### landing()
-The final function for now
+---
+
+The final function for now is ligtning up the lanfing bridge, which is open with personal on the ground in front.
 ```
 #######################
 ##  Our Landing bridge
