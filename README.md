@@ -3,6 +3,7 @@
 </div>
 
 # Lego Millinium Falcon with ESP-32
+
 Building The Legostarwars Ultimate Collection - Millinium Falcon with ESP32 Controller adding lights to the Collectio. (Hopefully this isn't last LEGO project i do)
 <div align="center">
     <img src="https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/blob/main/images/build/squreview.jpg">
@@ -19,7 +20,7 @@ When its on - it'll switch between 5scenes created in the python scripts
     4. Turning the light on in the Docking bridge
     5. Flying
 
-Between each scenes, is a random process, and the sleep time is a function called timeout that choose a number between 30secs to 15minutes. So starting the the script will do: 
+Between each scenes, is a random process, and the sleep time is a function called timeout that choose a number between 30secs to 15minutes. So starting the the script will do:
 
     * Choose a number between 1-5 (Choosing which scene to run.)
     * Start the scene
