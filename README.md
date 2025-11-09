@@ -112,7 +112,7 @@ def timeout():
 ### cockpitt()
 ---
 <div align="center">
-    <img src="https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/blob/main/images/lights/lights001.jpg">
+    <img src="https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/blob/main/images/lights/lights002.jpg">
 </div>
 Setting the light on in the cockpitt, uses PIN1 for lightning up 3white lights inside the cockpitt. Then calling the timeout() before turning the light off again
 
