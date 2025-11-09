@@ -11,6 +11,10 @@ Building The Legostarwars Ultimate Collection - Millinium Falcon with ESP32 Cont
 A long time ago, I found and bought the package: Lego StarWars Ultimate Collection Millinium Falcon V.2 - and found it again, decided to build the Falcon, and along the way the idea of installing ligth.<br>
 The Actual build time for the Millinum Falcon was 36hours and the hours in planning , configuring and setting up the ESP32-S3 Wroom controller was a longer process - and in this case - using a Pythonscript for switching the lights on and off. My Idea is making a glass shelf hanging this is a corner in a bedroom.
 
+<div align="center">
+    <img src="https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/blob/main/images/build/squreview.jpg">
+</div>
+
 When its on - it'll switch between 5scenes created in the python scripts
 
     1. Turning the light on in cockpitt
