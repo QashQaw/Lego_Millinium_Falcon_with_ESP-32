@@ -127,6 +127,14 @@ def cockpitt():
 ```
 
 ### above() and below()
+The 2 functions are the same, only difference is where the lasercanon are placedm and explained it'll do  the following: <br>
+1. Setting the acount as 1 (the first shot)
+2. Settings the amount of shots as a randint between 100 and 300.
+3. Then if $acount is less that $shots - the firing sequenze continues.
+4. if continuing, choosing a randint - for which PIN to light up as an shot from the lasercanon.
+5. After each shot it'll sleep in 10millisec - then choosing a new randit between 100 and 700 millisecs for sleeping between shots
+6. Then finally for each shots, it'll add one to the $acount - and then start checking if $acount is less than $shots
+
 
 ```
 #######################
@@ -173,5 +181,29 @@ def above():
             
     else:
         print("Finished firing above")
-        
+
+```
+
+### flyin()
+For creating the flying effect - I found some small strips, small enough to be inside the tubes, that simulates the Falcon engine. <br>
+The LED strips is 3mm width, and therefor I'd using these for simulating the blue light when the falcon flies. <br>
+
+EDIT:  I'm thinking about developing some more effects when flying, the brightness should flicker, starting from withe light to flying in lightspeed in blue and perhaps some sound - but more to come about that-
+
+```
+#######################
+## Method for flying
+def flying():
+    # Starting the motors for flying - turns on LED
+    for i in range(num_pixels):
+        np[i] = (0, 0, 255)  # Blue
+    np.write()
+    # Choosing the wait pause
+    timeout()
+    # Turn off the LED
+    for i in range(num_pixels):
+        np[i] = (0, 0, 0)  # White
+    np.write()
+    print("Finished flying")
+
 ```
