@@ -86,7 +86,8 @@ millinium = bool()
 
 First we'll imprt some dferent libraries, for setting all this up 
 
-|:------------------- | :-----------------|
+| Commands             | Usage |
+| :------------------- | :-----------------|
 | from random import randint| Use for create rondon int|
 | from machine import Pin | Use for easy accessing Pins |
 | import time | Use for sleep |
