@@ -94,4 +94,18 @@ First we'll imprt some dferent libraries, for setting all this up
 | from neopixel import NeoPixel| Use for using LED strips|
 
 Next up is enabling the different PIN output we need, for having the lights/Pins turn on or off, and setting up NeoPixels,  the number of LEDs there is on the strips.<br>
-And finally setting the Millinium boolean as true. and the we are ready for the script- 
+And finally setting the Millinium boolean as true. and the we are ready for starting the script. The first thing is our function timeout()
+
+### timeout()
+
+```
+#######################
+## Different Time between execution
+def timeout():
+    wait = randint(30000, 900000)   
+    time.sleep_ms(wait)
+
+```
+
+This function is a value, we'll use several times within the script. This function is called after each sccenes, providing a int - that it'll use for eping. The value are sleep between 30secs to 15minutes, creating the natural pause between each scenes, and also used to a timer between light on and off in the functions. 
+
