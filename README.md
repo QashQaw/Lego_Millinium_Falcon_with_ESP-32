@@ -97,7 +97,8 @@ Next up is enabling the different PIN output we need, for having the lights/Pins
 And finally setting the Millinium boolean as true. and the we are ready for starting the script. The first thing is our function timeout()
 
 ### timeout()
-
+---
+This function is a value, we'll use several times within the script. This function is called after each sccenes, providing a int - that it'll use for eping. The value are sleep between 30secs to 15minutes, creating the natural pause between each scenes, and also used to a timer between light on and off in the functions. 
 ```
 #######################
 ## Different Time between execution
@@ -107,9 +108,12 @@ def timeout():
 
 ```
 
-This function is a value, we'll use several times within the script. This function is called after each sccenes, providing a int - that it'll use for eping. The value are sleep between 30secs to 15minutes, creating the natural pause between each scenes, and also used to a timer between light on and off in the functions. 
 
 ### cockpitt()
+---
+<div align="center">
+    <img src="https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/blob/main/images/lights/lights001.jpg">
+</div>
 Setting the light on in the cockpitt, uses PIN1 for lightning up 3white lights inside the cockpitt. Then calling the timeout() before turning the light off again
 
 ```
@@ -127,6 +131,7 @@ def cockpitt():
 ```
 
 ### above() and below()
+---
 The 2 functions are the same, only difference is where the lasercanon are placedm and explained it'll do  the following: <br>
 1. Setting the acount as 1 (the first shot)
 2. Settings the amount of shots as a randint between 100 and 300.
