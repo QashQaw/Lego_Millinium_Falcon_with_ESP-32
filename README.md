@@ -252,7 +252,11 @@ def landing():
 ### main function()
 ---
 
-
+This main functions is a simple try-catch, where we controlling which function to call.
+1. setting boolean as True
+2. when valid(allways) we'll taking and randint between 1-5 which are the 5 different functions.
+3. using a switch to choose between the functions
+4. taking a [timeout()](https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/tree/main#timeout) before starting all over again 
 ```
 #######################
 # Controlling the LED
