@@ -192,7 +192,7 @@ EDIT:  I'm thinking about developing some more effects when flying, the brightne
 The script will do when flying:
 1. setting the color of the strips
 2. write to activate the color on the strips
-3. taking the timeout()
+3. taking the [timeout()](https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/tree/main#timeout)
 4. then turing off the lights in LED strips. 
 
 ```
