@@ -248,3 +248,48 @@ def landing():
     led8.value(0)
     print("Finished landingbridge")
 ```
+
+### main function()
+---
+
+
+```
+#######################
+# Controlling the LED
+try:
+    # Setting millinium bool to TRUE
+    millinium = True
+    
+    # Then run the loop
+    while millinium:
+        # Setting a number and match against sequences
+        num = randint(1,5)
+        # Number 1 == Cockpitlight
+        if num == 1:
+            cockpitt()
+            timeout()
+        # Number 2 == Shots firing from above
+        elif num == 2:
+            above()
+            timeout()
+        # Number 3 == Shots firing from below
+        elif num == 3:
+            below()
+            timeout()
+        # Number 4 == Flying engine
+        elif num == 4:
+            flying()
+            timeout()
+        # Number 5 == Light in the landingbridge 
+        elif num == 5:
+            landing()
+            timeout()
+        else:
+            print("No number is selected")
+
+        
+            
+except:
+    print("Failure is total")
+# EOF
+```
