@@ -212,3 +212,18 @@ def flying():
     print("Finished flying")
 
 ```
+
+### Landing()
+
+```
+#######################
+##  Our Landing bridge
+def landing():
+    # Setting the Pins for ON
+    led8.value(1)
+    # Choosing the wait pause
+    timeout()
+    # Turns of Pins
+    led8.value(0)
+    print("Finished landingbridge")
+```
