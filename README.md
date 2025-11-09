@@ -42,7 +42,8 @@ The firing scenes also choose a number between 100-300 for the number of shot to
 # Starting With Pythom (or Micro-python)
 I know python from work, so needed to find out what the ESP32-S3 Wroon Connector can do. Lets take a look at the python file created for this Falcon. 
 
-`# !/usr/bin/python
+`
+# !/usr/bin/python
 # This python script is for
 # create light in the
 # Millinium Falcon in Lego
@@ -81,4 +82,5 @@ led8=Pin(8,Pin.OUT)
 #######################
 # Setting the boolean
 millinium = bool()
-#######################`
+#######################
+`
