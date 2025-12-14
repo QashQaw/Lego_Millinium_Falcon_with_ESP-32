@@ -64,13 +64,13 @@ Between each scenes, is a random process, and the sleep time is a function calle
 The firing scenes also choose a number between 100-300 for the number of shot to fire - and call a random int between 100-700, which is tyhe time before the next shot in millisecs.
 
 
-
+Seperate
 ## Starting With Pythom (or Micro-python)
 ---
 <div align="center">
     <img src="https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/blob/main/images/lights/lights004.jpg">
 </div>
-For starting out with a new Controller, you'll properly need to flash the firmware, and prepare the ESP-Controller to autostart the pythonscript. This procedure is described in a [seperate README.md](https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/tree/main/update-howto).<br>
+For starting out with a new Controller, you'll properly need to flash the firmware, and prepare the ESP-Controller to autostart the pythonscript. This procedure is described in a [README.md](https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/tree/main/update-howto) .<br>
 So why not use the HomeAssistent to create the different functions, which I'd looked at - but had some issues all along making t almost impossible to create the same functions on the same level as I can in a python code.
 
 I know python from work, so needed to find out what the ESP32-S3 Wroon Connector can do. Lets take a look at the python file created for this Falcon. 
