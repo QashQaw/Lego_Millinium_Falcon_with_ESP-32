@@ -16,16 +16,16 @@
 
 ## Lego Millinium Falcon with ESP-32
 Building The Legostarwars Ultimate Collection - Millinium Falcon with ESP32 Controller adding lights to the Collectio. (Hopefully this isn't last LEGO project i do)
+
 <div align="center">
-    <img src="https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/blob/main/images/build/squreview.jpg">
+    <img src="https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/blob/main/images/build/Lego_Boxset.png">
 </div>
 
 A long time ago, I found and bought the package: Lego StarWars Ultimate Collection Millinium Falcon V.2 - and found it again, decided to build the Falcon, and along the way the idea of installing ligth.<br>
 The Actual build time for the Millinum Falcon was 36hours and the hours in planning , configuring and setting up the ESP32-S3 Wroom controller was a longer process - and in this case - using a Pythonscript for switching the lights on and off. My Idea is making a glass shelf hanging this is a corner in a bedroom.
 
-<div align="center">
-    <img src="https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/blob/main/images/build/Lego_Boxset.png">
-</div>
+
+
 
 The package contains 4 boxes, containing several bags with the numbers 1-18, which is the different levels you need to go through while building the Millinium Falcon. I did not lock any of the top plates, so I could create the light within tha Falcon. I had some lovely times spent with my boy, collecting the Falcon, and starting the little idea of building this massive Starship. The building process are documated wth fotos within [images/build](https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/tree/main/images/build) the folder. And also the different light setup in the [images/lights](https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/tree/main/images/build). 
 
@@ -47,6 +47,9 @@ Between each scenes, is a random process, and the sleep time is a function calle
 
 The firing scenes also choose a number between 100-300 for the number of shot to fire - and call a random int between 100-700, which is tyhe time before the next shot in millisecs.
 
+<div align="center">
+    <img src="https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/blob/main/images/build/squreview.jpg">
+</div>
 
 ## Starting With Pythom (or Micro-python)
 ---
