@@ -4,8 +4,9 @@
 
 # Table of Contents
 1. [Lego Millinium Falcon with ESP-32](https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/tree/main#lego-millinium-falcon-with-esp-32)
-2. [Prepare the ESP32-S3](https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/tree/main/update-howto)
-3. [Starting With Pythom (or Micro-python)](https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/tree/main#starting-with-pythom-or-micro-python)
+2. [Assemble the the Millinium Falcon]()
+3. [Prepare the ESP32-S3](https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/tree/main/update-howto)
+4. [Starting With Pythom (or Micro-python)](https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/tree/main#starting-with-pythom-or-micro-python)
     1. [timeout()](https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/tree/main#timeout)
     2. [cockpit()](https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/tree/main#cockpitt)
     3. [above() or below()](https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/tree/main#above-and-below)
