@@ -5,6 +5,7 @@
 # Table of Contents
 1. [Lego Millinium Falcon with ESP-32](https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/tree/main#lego-millinium-falcon-with-esp-32)
 2. [Assemble the the Millinium Falcon]()
+3. [The masterplan for the lights]()
 3. [Prepare the ESP32-S3](https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/tree/main/update-howto)
 4. [Starting With Pythom (or Micro-python)](https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/tree/main#starting-with-pythom-or-micro-python)
     1. [timeout()](https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/tree/main#timeout)
@@ -21,13 +22,20 @@ Building The Legostarwars Ultimate Collection - Millinium Falcon with ESP32 Cont
     <img src="https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/blob/main/images/build/Lego_Boxset.png">
 </div>
 
-A long time ago, I found and bought the package: Lego StarWars Ultimate Collection Millinium Falcon V.2 - and found it again, decided to build the Falcon, and along the way the idea of installing ligth.<br>
-The Actual build time for the Millinum Falcon was 36hours and the hours in planning , configuring and setting up the ESP32-S3 Wroom controller was a longer process - and in this case - using a Pythonscript for switching the lights on and off. My Idea is making a glass shelf hanging this is a corner in a bedroom.
+A long time ago, I found and bought the package: Lego StarWars Ultimate Collection Millinium Falcon V.2 #75192- and found it again, decided to build the Falcon, and along the way the idea of installing ligth.<br>
+The package contains 4 boxes, containing several bags with the numbers 1-18, which is the different levels you need to go through while building the Millinium Falcon. 
+<br>
+Then find a Micro-Controller to handle the light, and start planning on how to make my idea work, with different scenes to run each night in a corner. My Idea is making a glass shelf hanging this is a corner in a bedroom or livingroom to avoid the dust - having my HomeAssistent to power on the controller and then run using a Pythonscript for switching the lights on and off. 
+
+## Assemble the Millinium Falcon 
+The Actual build time for the Millinum Falcon was 36hours and the hours in planning, so while assembling the Falcon, the ideas of how to create the effects startet, and started to order the different parts needed for making my idea work in the end.
 
 
+ I did not lock any of the top plates, so I could create the light within tha Falcon. I had some lovely times spent with my boy, collecting the Falcon, and starting the little idea of building this massive Starship. 
+ <br>
+ The building process are documated wth fotos within [images/build](https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/tree/main/images/build) the folder. And also the different light setup in the [images/lights](https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/tree/main/images/build). 
 
-
-The package contains 4 boxes, containing several bags with the numbers 1-18, which is the different levels you need to go through while building the Millinium Falcon. I did not lock any of the top plates, so I could create the light within tha Falcon. I had some lovely times spent with my boy, collecting the Falcon, and starting the little idea of building this massive Starship. The building process are documated wth fotos within [images/build](https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/tree/main/images/build) the folder. And also the different light setup in the [images/lights](https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/tree/main/images/build). 
+ ## The masterplan for the lights
 
 When its on - it'll switch between 5scenes created in the python scripts
 
