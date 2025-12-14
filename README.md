@@ -2,7 +2,11 @@
     <img src="https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/blob/main/images/qashqaw.png">
 </div>
 
-# Lego Millinium Falcon with ESP-32
+# Table of Contents
+1. [Lego Millinium Falcon with ESP-32](https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/tree/main##lego-millinium-falcon-with-esp-32) 
+
+
+## Lego Millinium Falcon with ESP-32
 Building The Legostarwars Ultimate Collection - Millinium Falcon with ESP32 Controller adding lights to the Collectio. (Hopefully this isn't last LEGO project i do)
 <div align="center">
     <img src="https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/blob/main/images/build/squreview.jpg">
@@ -36,7 +40,7 @@ Between each scenes, is a random process, and the sleep time is a function calle
 The firing scenes also choose a number between 100-300 for the number of shot to fire - and call a random int between 100-700, which is tyhe time before the next shot in millisecs.
 
 
-# Starting With Pythom (or Micro-python)
+## Starting With Pythom (or Micro-python)
 ---
 <div align="center">
     <img src="https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/blob/main/images/lights/lights004.jpg">
