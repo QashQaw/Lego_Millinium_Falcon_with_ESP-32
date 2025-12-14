@@ -4,9 +4,8 @@
 
 # Table of Contents
 1. [Lego Millinium Falcon with ESP-32](https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/tree/main#lego-millinium-falcon-with-esp-32)
-2. [Assemble the the Millinium Falcon]()
-3. [The masterplan for the lights]()
-3. [Prepare the ESP32-S3](https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/tree/main/update-howto)
+2. [Assemble the the Millinium Falcon](https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/tree/main#assemble-the-millinium-falcon)
+3. [The masterplan for the lights](https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/tree/main#the-masterplan-for-the-lights)
 4. [Starting With Pythom (or Micro-python)](https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/tree/main#starting-with-pythom-or-micro-python)
     1. [timeout()](https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/tree/main#timeout)
     2. [cockpit()](https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/tree/main#cockpitt)
@@ -35,7 +34,16 @@ The Actual build time for the Millinum Falcon was 36hours and the hours in plann
  <br>
  The building process are documated wth fotos within [images/build](https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/tree/main/images/build) the folder. And also the different light setup in the [images/lights](https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/tree/main/images/build). 
 
+ <div align="center">
+    <img src="https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/blob/main/images/build/squreview.jpg">
+</div>
+
  ## The masterplan for the lights
+My different tries for this controller I've ended up through the process, with the solution of having a HomeAssistent Plugin to control when the lights is on and off. In HomeAssistent you can create an automation based on Sunset, for power on the ESP-controller and then autostart the python script
+
+<div align="center">
+    <img src="https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/blob/main/images/HA_Automation.png">
+</div>
 
 When its on - it'll switch between 5scenes created in the python scripts
 
@@ -55,15 +63,16 @@ Between each scenes, is a random process, and the sleep time is a function calle
 
 The firing scenes also choose a number between 100-300 for the number of shot to fire - and call a random int between 100-700, which is tyhe time before the next shot in millisecs.
 
-<div align="center">
-    <img src="https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/blob/main/images/build/squreview.jpg">
-</div>
+
 
 ## Starting With Pythom (or Micro-python)
 ---
 <div align="center">
     <img src="https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/blob/main/images/lights/lights004.jpg">
 </div>
+For starting out with a new Controller, you'll properly need to flash the firmware, and prepare the ESP-Controller to autostart the pythonscript. This procedure is described in a [seperate README.md](https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/tree/main/update-howto).<br>
+So why not use the HomeAssistent to create the different functions, which I'd looked at - but had some issues all along making t almost impossible to create the same functions on the same level as I can in a python code.
+
 I know python from work, so needed to find out what the ESP32-S3 Wroon Connector can do. Lets take a look at the python file created for this Falcon. 
 
 ```
