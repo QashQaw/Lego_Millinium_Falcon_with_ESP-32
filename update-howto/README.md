@@ -5,8 +5,8 @@
 # Flashing the firmware on the ESP32-S3
 Requirements:
 
-    [Python min 3.11](https://www.python.org/downloads/)
-    Editor [Thony](https://thonny.org/)
+    Python min 3.11   https://www.python.org/downloads/
+    Editor Thony      https://thonny.org/
 
 The editor is needed for communication with the controller - and for flashing the firmware on the controller
 
@@ -30,4 +30,3 @@ The script for linux look like this, where you need to change the name of the fi
     os.system("python3 esptool/esptool.py --chip esp32s3  erase_flash")
 
     os.system("python3 esptool/esptool.py --chip esp32s3 --baud 2000000 write_flash -z 0 GENERIC_S3-20250415-v1.25.0.bin")
-
