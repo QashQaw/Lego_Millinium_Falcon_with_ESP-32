@@ -39,7 +39,7 @@ The Actual build time for the Millinum Falcon was 36hours and the hours in plann
 </div>
 
  ## The masterplan for the lights
- After looking around - I've ended up with the ESP32-S3-Wroom - as the controller for my project, so found one on Temu - and then here we go :-) <br>
+ After looking around - I've ended up with the ESP32-S3-Wroom - as the controller for my project, so found one on Temu - and then here we go :-)
 My different tries for this controller I've ended up through the process, with the solution of having a HomeAssistent Plugin to control when the lights is on and off. In HomeAssistent you can create an automation based on Sunset, for power on the ESP-controller and then autostart the python script. That way we can also set a fixed time to turn off the light again,
 
 <div align="center">
