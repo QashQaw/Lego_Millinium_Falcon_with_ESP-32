@@ -287,8 +287,6 @@ def landing():
 ```
 
 ### main function()
----
-
 This main functions is a simple try-catch, where we controlling which function to call.
 
     1. setting boolean as True
@@ -296,7 +294,7 @@ This main functions is a simple try-catch, where we controlling which function t
     3. using a switch to choose between the functions
     4. taking a [timeout()](https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/tree/main#timeout) before starting all over again 
 
-
+This functions are the main controller, which runs in a loop - choosing a new function to run untill the unit are power off. 
 ```
 #######################
 # Controlling the LED
@@ -334,4 +332,8 @@ except:
     print("Failure is total")
 # EOF
 ```
-This will make a choice depending on the random number - thats been drawn with the interger "num". and when finished executing the choice - it'll redrawing "num" and gets the next function to run.  
+This will make a choice depending on the random number - thats been drawn with the interger "num". and when finished executing the choice - it'll redrawing "num" and gets the next function to run.
+
+The next project could be sound - but again I think it'll be ignoring with sound running in the background each evening. My guess is I rather not have sound on, along with the issue of playing a sound, it'll play untill its finished - so and act like firing the canons will be a problem, and will halt the script untill the sound is played to the end.
+
+Come with your input - good and bad - i would like to hear it.
