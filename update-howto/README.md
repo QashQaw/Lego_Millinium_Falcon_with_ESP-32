@@ -30,3 +30,41 @@ The script for linux look like this, where you need to change the name of the fi
     os.system("python3 esptool/esptool.py --chip esp32s3  erase_flash")
 
     os.system("python3 esptool/esptool.py --chip esp32s3 --baud 2000000 write_flash -z 0 GENERIC_S3-20250415-v1.25.0.bin")
+
+## Creating the bootfle
+For starting our script whenever the switch is powered on, it'll start running the script we created for the falcon, so creating the file boot.py: 
+
+    #!/opt/bin/lv_micropython
+    import uos as os
+    import uerrno as errno
+    iter = os.ilistdir()
+    IS_DIR = 0x4000
+    IS_REGULAR = 0x8000
+
+    while True:
+        try:
+            entry = next(iter)
+            filename = entry[0]
+            file_type = entry[1]
+            if filename == 'boot.py':
+                print("det er testet")
+               continue
+            
+            else:
+                print("===============================")
+                print(filename,end="")
+                if file_type == IS_DIR:
+                    print(", File is a directory")
+                    print("===============================")
+                else:
+                    print("\n===============================")
+                    #print("Contents:")
+                    #with open(filename) as f:
+                    #   for line in enumerate(f):
+                    #       print("{}".format(line[1]),end="")
+                    #print("")
+                    exec(open(filename).read(),globals())
+        except StopIteration:
+            break
+
+This will load any file, located in the / (root) of the ESP32-S3-Wroom controller, so now youre ready to go creating the python script for running the Millinium Falcon. 
