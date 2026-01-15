@@ -178,6 +178,8 @@ def landing():
 # Controlling the LED
 try:
     # Setting millinium bool to TRUE
+    # This could be done otherwise by clock,. I did a test with wifi - and starting wifi and use the clock to determine when the script should run.
+    # But thenit'll be powered on during the day - using homeassistant it'll only be powered on during runtime.
     millinium = True
     
     # Then run the loop

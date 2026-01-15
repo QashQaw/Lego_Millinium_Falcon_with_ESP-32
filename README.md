@@ -74,7 +74,7 @@ Seperate
 For starting out with a new Controller, you'll properly need to flash the firmware, and prepare the ESP-Controller to autostart the pythonscript. This procedure is described in a seperate README.md here - https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/tree/main/update-howto.<br>
 So why not use the HomeAssistent to create the different functions, which I'd looked at - but had some issues all along making t almost impossible to create the same functions on the same level as I can in a python code.
 
-I know python from work, so needed to find out what the ESP32-S3 Wroon Connector can do. Lets take a look at the python file created for this Falcon. 
+I know python from work, so needed to find out what the ESP32-S3 Wroon Connector can do. Lets take a look at the python file created for this Falcon. Starting the script with setting our parameters and  initialze the PINS etc 
 
 ```
 # !/usr/bin/python
@@ -127,12 +127,12 @@ First we'll import some different libraries, for setting all this up
 | import time | Use for sleep |
 | from neopixel import NeoPixel| Use for using LED strips|
 
-Next up is enabling the different PIN output we need, for having the lights/Pins turn on or off, and setting up NeoPixels,  the number of LEDs there is on the strips.<br>
-And finally setting the Millinium boolean as true. and the we are ready for starting the script. The first thing is our function timeout()
+Next up is enabling the different PIN output we need, for having the lights/Pins turn on or off, and setting up NeoPixels, the number of LEDs there is on the strips.<br>
+And finally setting the Millinium boolean as true. and the we are ready for starting the script. The first thing is our function timeout(), which is called between each functions called.
 
 ### timeout()
 ---
-This function is a value, we'll use several times within the script. This function is called after each sccenes, providing a int - that it'll use for eping. The value are sleep between 30secs to 15minutes, creating the natural pause between each scenes, and also used to a timer between light on and off in the functions. 
+This function is a value, we'll use several times within the script. This function is called after each sccenes, providing a int - that it'll use for sleep. The value are sleep between 30secs to 15minutes, creating the natural pause between each scenes, and also used to a timer between light on and off in the functions. By creating a seperate functions, we can instead of setting the sleep again - we can just call out timeout(), and the execution is on hold while sleep.
 ```
 #######################
 ## Different Time between execution
@@ -147,7 +147,7 @@ def timeout():
 <div align="center">
     <img src="https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/blob/main/images/lights/lights002.jpg">
 </div>
-This is a simple PIN light on and  off
+This is a simple PIN light on and off, but having 3pins wired to the PIN1.out, giving the light inside the cockpitt. This is the same as the light inside the cargo room, connecting more light to the same PIN.out on the controller, which make this possible with the lights installed inside the Falcon.
 
 1. Setting the light on in the cockpitt using PIN1 for lightning up 3white lights inside the cockpitt.
 2. Then calling the timeout() 
@@ -173,7 +173,7 @@ def cockpitt():
     <img src="https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/blob/main/images/lights/Firing_above.gif">
 </div>
 
-The 2 functions are the same, only difference is where the lasercanon are placedm and explained it'll do  the following: <br>
+The 2 functions are the same, only difference is where the lasercanon are place and explained it'll do  the following: <br>
 1. Setting the acount as 1 (the first shot)
 2. Settings the amount of shots as a randint between 100 and 300.
 3. Then if $acount is less that $shots - the firing sequenze continues.
@@ -181,7 +181,7 @@ The 2 functions are the same, only difference is where the lasercanon are placed
 5. After each shot it'll sleep in 10millisec - then choosing a new randit between 100 and 700 millisecs for sleeping between shots
 6. Then finally for each shots, it'll add one to the $acount - and then start checking if $acount is less than $shots
 
-
+So this function is for creating the shooting scenes, from above or below the Falcon. For simulation the shot, we'll power on the LED and wait for 10 milliseconds before turning the LED off
 ```
 #######################
 ## Shots above falcon
@@ -322,11 +322,9 @@ try:
             landing()
             timeout()
         else:
-            print("No number is selected")
-
-        
-            
+            print("No number is selected")            
 except:
     print("Failure is total")
 # EOF
 ```
+This will make a choice depending on the random number - thats been drawn with the interger "num". and when finished executing the choice - it'll redrawing "num" and gets the next function to run.  
