@@ -149,9 +149,11 @@ def timeout():
 </div>
 This is a simple PIN light on and off, but having 3pins wired to the PIN1.out, giving the light inside the cockpitt. This is the same as the light inside the cargo room, connecting more light to the same PIN.out on the controller, which make this possible with the lights installed inside the Falcon.
 
+```
 1. Setting the light on in the cockpitt using PIN1 for lightning up 3white lights inside the cockpitt.
 2. Then calling the timeout() 
 3. before turning the light off again
+```
 
 ```
 ## Cockpitt ligth turing
@@ -174,12 +176,14 @@ def cockpitt():
 </div>
 
 The 2 functions are the same, only difference is where the lasercanon are place and explained it'll do  the following: <br>
+```
 1. Setting the acount as 1 (the first shot)
 2. Settings the amount of shots as a randint between 100 and 300.
 3. Then if $acount is less that $shots - the firing sequenze continues.
 4. if continuing, choosing a randint - for which PIN to light up as an shot from the lasercanon.
 5. After each shot it'll sleep in 10millisec - then choosing a new randit between 100 and 700 millisecs for sleeping between shots
 6. Then finally for each shots, it'll add one to the $acount - and then start checking if $acount is less than $shots
+```
 
 So this function is for creating the shooting scenes, from above or below the Falcon. For simulation the shot, we'll power on the LED and wait for 10 milliseconds before turning the LED off
 ```
@@ -242,10 +246,12 @@ The LED strips is 3mm width, and therefor I'd using these for simulating the blu
 
 EDIT:  I'm thinking about developing some more effects when flying, the brightness should flicker, starting from withe light to flying in lightspeed in blue and perhaps some sound - but more to come about that!
 The script will do when flying:
+```
 1. setting the color of the strips
 2. write to activate the color on the strips
 3. taking the [timeout()](https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/tree/main#timeout)
 4. then turing off the lights in LED strips. 
+```
 
 ```
 #######################
@@ -286,10 +292,13 @@ def landing():
 ---
 
 This main functions is a simple try-catch, where we controlling which function to call.
+```
 1. setting boolean as True
 2. when valid(allways) we'll taking and randint between 1-5 which are the 5 different functions.
 3. using a switch to choose between the functions
 4. taking a [timeout()](https://github.com/QashQaw/Lego_Millinium_Falcon_with_ESP-32/tree/main#timeout) before starting all over again 
+```
+
 ```
 #######################
 # Controlling the LED
